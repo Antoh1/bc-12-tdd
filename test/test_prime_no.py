@@ -10,5 +10,11 @@ class primeNumberTestCase(unittest.TestCase):
 	def test_if_number_less_than_2(self):
 		self.assertEqual(prime.prime_no(0),"prime number is greater than one")	
 	def test_less_than_zero(self):
-		self.assertEqual(prime.prime_no(-1),"No negative prime numbers")			
-
+		self.assertEqual(prime.prime_no(-1),"No negative prime numbers")
+	def test_number_type_not_string(self):
+		self.assertEqual(prime.prime_no("string"),"Only integers allowed")
+	def test_number_type_not_string(self):
+		self.assertEqual(prime.prime_no([]),"Only integers allowed")
+	def test_number_type_not_string(self):
+		self.assertEqual(prime.prime_no({}),"Only integers allowed")
+	

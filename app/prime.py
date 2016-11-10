@@ -1,10 +1,12 @@
 def prime_no(number):
 	"""this function checks for prime numbers in a range and outputs them in a list"""
-	if number==1 or number==0:
+	if type(number)!=int:
+		return "Only integers allowed"
+	elif number==1 or number==0:
 		return "prime number is greater than one"
-	if number<0:
+	elif number<0:
 		return "No negative prime numbers"
-	if number==2:
+	elif number==2:
 		return [2]	
 	primes = [2,3]
 	if number<=3:

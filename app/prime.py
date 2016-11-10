@@ -3,7 +3,7 @@ def prime_numbers(number):
 	if type(number)!=int:
 		return "Only integers allowed"
 	elif number==1 or number==0 or number<0:
-		return "a prime number is greater than one"	
+		return "prime numbers are greater than one"	
 	primes = []
 	for num in range(2,number+1):
 		p_flag = True

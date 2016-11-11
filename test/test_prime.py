@@ -4,7 +4,7 @@ import unittest
 
 class primeNumberTestCase(unittest.TestCase):
 	def test_if_number_passed_is_prime(self):
-		self.assertEqual(prime.prime_numbers(5), [2,3])
+		self.assertEqual(prime.prime_numbers(5), [2,3,5])
 	def tes_if_output_is_list(self):
 		self.assertIsInstance(prime.prime_numbers(14), list)	
 	def test_if_number_is_one(self):
